@@ -1,0 +1,695 @@
+geocode,province,municipality,signal
+PH056216000,Sorsogon,City of Sorsogon,1
+PH056202000,Sorsogon,Barcelona,1
+PH056204000,Sorsogon,Bulusan,1
+PH056211000,Sorsogon,Magallanes,1
+PH056213000,Sorsogon,Pilar,1
+PH056206000,Sorsogon,Castilla,1
+PH056208000,Sorsogon,Gubat,1
+PH056215000,Sorsogon,Santa Magdalena,1
+PH056205000,Sorsogon,Casiguran,1
+PH056207000,Sorsogon,Donsol,1
+PH056210000,Sorsogon,Juban,1
+PH056203000,Sorsogon,Bulan,1
+PH056209000,Sorsogon,Irosin,1
+PH056212000,Sorsogon,Matnog,1
+PH056214000,Sorsogon,Prieto Diaz,1
+PH045634000,Quezon,Pitogo,1
+PH045636001,Quezon,Pollilo Islands,1
+PH045640000,Quezon,San Andres,1
+PH045605000,Quezon,Buenavista,1
+PH045642000,Quezon,San Francisco,1
+PH045607000,Quezon,Calauag,1
+PH045620000,Quezon,Infanta,1
+PH045622000,Quezon,Lopez,1
+PH045610000,Quezon,Catanauan,1
+PH045628000,Quezon,Mulanay,1
+PH045618000,Quezon,Guinayangan,1
+PH045649000,Quezon,Unisan,1
+PH045616000,Quezon,General Luna,1
+PH045635000,Quezon,Plaridel,1
+PH045637000,Quezon,Quezon,1
+PH045602000,Quezon,Alabat,1
+PH045629000,Quezon,Padre Burgos,1
+PH045625000,Quezon,Macalelon,1
+PH045627000,Quezon,Mauban,1
+PH045617000,Quezon,General Nakar,1
+PH045633000,Quezon,Perez,1
+PH045601000,Quezon,Agdangan,1
+PH045619000,Quezon,Gumaca,1
+PH045603000,Quezon,Atimonan,1
+PH045638000,Quezon,Real,1
+PH045644000,Quezon,San Narciso,1
+PH045646000,Quezon,Tagkawayan,1
+PH037705000,Aurora,Dingalan,1
+PH037701000,Aurora,Baler,1
+PH037707000,Aurora,Maria Aurora,1
+PH037708000,Aurora,San Luis,1
+PH025015000,Nueva Vizcaya,Alfonso Castaneda,1
+PH025007000,Nueva Vizcaya,Dupax del Norte,1
+PH025010000,Nueva Vizcaya,Kayapa,1
+PH025012000,Nueva Vizcaya,Santa Fe,1
+PH025002000,Nueva Vizcaya,Aritao,1
+PH025004000,Nueva Vizcaya,Bambang,1
+PH025008000,Nueva Vizcaya,Dupax del Sur,1
+PH141104000,Benguet,Bokod,1
+PH141106000,Benguet,Itogon,1
+PH141113000,Benguet,Tuba,1
+PH141102000,Benguet,Baguio City,1
+PH141108000,Benguet,Kapangan,1
+PH141101000,Benguet,Atok,1
+PH141110000,Benguet,La Trinidad,1
+PH141112000,Benguet,Sablan,1
+PH141114000,Benguet,Tublay,1
+PH013320000,La Union,Tubao,1
+PH013310000,La Union,Luna,1
+PH013312000,La Union,Pugo,1
+PH013309000,La Union,Caba,1
+PH013318000,La Union,Santol,1
+PH013307000,La Union,Bauang,1
+PH013314000,La Union,City of San Fernando,1
+PH013316000,La Union,San Juan,1
+PH013304000,La Union,Bagulin,1
+PH013302000,La Union,Aringay,1
+PH013306000,La Union,Bangar,1
+PH013315000,La Union,San Gabriel,1
+PH013317000,La Union,Santo Tomas,1
+PH013308000,La Union,Burgos,1
+PH013311000,La Union,Naguilian,1
+PH013313000,La Union,Rosario,1
+PH013301000,La Union,Agoo,1
+PH013303000,La Union,Bacnotan,1
+PH013319000,La Union,Sudipen,1
+PH013305000,La Union,Balaoan,1
+PH034905000,Nueva Ecija,Carranglan,1
+PH034902000,Nueva Ecija,Bongabon,1
+PH034907000,Nueva Ecija,Gabaldon,1
+PH034920000,Nueva Ecija,Pantabangan,1
+PH015529000,Pangasinan,Natividad,1
+PH015536000,Pangasinan,San Nicolas,1
+PH015537000,Pangasinan,San Quintin,1
+PH015541000,Pangasinan,Sison,1
+PH015530000,Pangasinan,Pozorrubio,1
+PH015535000,Pangasinan,San Manuel,1
+PH015533000,Pangasinan,San Fabian,1
+PH015505000,Pangasinan,Anda,1
+PH015514000,Pangasinan,Bolinao,1
+PH015534000,Pangasinan,San Jacinto,1
+PH015525000,Pangasinan,Manaoag,1
+PH015548000,Pangasinan,Laoac,1
+PH015512000,Pangasinan,Binalonan,1
+PH015506000,Pangasinan,Asingan,1
+PH015543000,Pangasinan,Tayug,1
+PH015539000,Pangasinan,Santa Maria,1
+PH015544000,Pangasinan,Umingan,1
+PH015518000,Pangasinan,Dagupan City,1
+PH015526000,Pangasinan,Mangaldan,1
+PH034916000,Nueva Ecija,Lupao,1
+PH034926000,Nueva Ecija,San Jose City,1
+PH023110000,Isabela,Dinapigue,2
+PH015524000,Pangasinan,Malasiqui,1
+PH015527000,Pangasinan,Mangatarem,1
+PH036913000,Tarlac,San Clemente,1
+PH036910000,Tarlac,Paniqui,1
+PH036909000,Tarlac,Moncada,1
+PH036907000,Tarlac,La Paz,1
+PH036916000,Tarlac,City of Tarlac,1
+PH036918000,Tarlac,San Jose,1
+PH036906000,Tarlac,Gerona,1
+PH036908000,Tarlac,Mayantoc,1
+PH036911000,Tarlac,Pura,1
+PH036902000,Tarlac,Bamban,1
+PH036904000,Tarlac,Capas,1
+PH036915000,Tarlac,Santa Ignacia,1
+PH036917000,Tarlac,Victoria,1
+PH036903000,Tarlac,Camiling,1
+PH036905000,Tarlac,Concepcion,1
+PH036912000,Tarlac,Ramos,1
+PH036914000,Tarlac,San Manuel,1
+PH036901000,Tarlac,Anao,1
+PH015509000,Pangasinan,Basista,1
+PH015522000,Pangasinan,Lingayen,1
+PH015547000,Pangasinan,Villasis,1
+PH015503000,Pangasinan,City of Alaminos,1
+PH015545000,Pangasinan,Urbiztondo,1
+PH015510000,Pangasinan,Bautista,1
+PH015528000,Pangasinan,Mapandan,1
+PH015531000,Pangasinan,Rosales,1
+PH015516000,Pangasinan,Burgos,1
+PH015502000,Pangasinan,Aguilar,1
+PH015504000,Pangasinan,Alcala,1
+PH015542000,Pangasinan,Sual,1
+PH015521000,Pangasinan,Labrador,1
+PH015508000,Pangasinan,Bani,1
+PH015540000,Pangasinan,Santo Tomas,1
+PH015546000,Pangasinan,City of Urdaneta,1
+PH015523000,Pangasinan,Mabini,1
+PH015532000,Pangasinan,San Carlos City,1
+PH015513000,Pangasinan,Binmaley,1
+PH015515000,Pangasinan,Bugallon,1
+PH015511000,Pangasinan,Bayambang,1
+PH015520000,Pangasinan,Infanta,1
+PH015501000,Pangasinan,Agno,1
+PH015517000,Pangasinan,Calasiao,1
+PH015538000,Pangasinan,Santa Barbara,1
+PH015519000,Pangasinan,Dasol,1
+PH015507000,Pangasinan,Balungao,1
+PH037103000,Zambales,Candelaria,1
+PH037101000,Zambales,Botolan,1
+PH037105000,Zambales,Iba,1
+PH037107000,Zambales,Olongapo City,1
+PH037114000,Zambales,Subic,1
+PH037110000,Zambales,San Felipe,1
+PH037112000,Zambales,San Narciso,1
+PH037109000,Zambales,San Antonio,1
+PH037102000,Zambales,Cabangan,1
+PH037108000,Zambales,Palauig,1
+PH037111000,Zambales,San Marcelino,1
+PH037113000,Zambales,Santa Cruz,1
+PH037104000,Zambales,Castillejos,1
+PH037106000,Zambales,Masinloc,1
+PH034906000,Nueva Ecija,Cuyapo,1
+PH034908000,Nueva Ecija,City of Gapan,1
+PH034930000,Nueva Ecija,Talavera,1
+PH034927000,Nueva Ecija,San Leonardo,1
+PH034929000,Nueva Ecija,Santo Domingo,1
+PH034923000,Nueva Ecija,Rizal,1
+PH034925000,Nueva Ecija,San Isidro,1
+PH034913000,Nueva Ecija,Laur,1
+PH034932000,Nueva Ecija,Zaragoza,1
+PH034915000,Nueva Ecija,Llanera,1
+PH034911000,Nueva Ecija,Guimba,1
+PH034901000,Nueva Ecija,Aliaga,1
+PH034917000,Nueva Ecija,Science City of Muñoz,1
+PH034919000,Nueva Ecija,Palayan City,1
+PH034909000,Nueva Ecija,General Mamerto Natividad,1
+PH034903000,Nueva Ecija,Cabanatuan City,1
+PH034922000,Nueva Ecija,Quezon,1
+PH034924000,Nueva Ecija,San Antonio,1
+PH034910000,Nueva Ecija,General Tinio,1
+PH034928000,Nueva Ecija,Santa Rosa,1
+PH034918000,Nueva Ecija,Nampicuan,1
+PH034931000,Nueva Ecija,Talugtug,1
+PH034921000,Nueva Ecija,Peñaranda,1
+PH034912000,Nueva Ecija,Jaen,1
+PH034914000,Nueva Ecija,Licab,1
+PH034904000,Nueva Ecija,Cabiao,1
+PH031424000,Bulacan,Doña Remedios Trinidad,1
+PH031414000,Bulacan,Obando,1
+PH031416000,Bulacan,Paombong,1
+PH031404000,Bulacan,Bocaue,1
+PH031420000,Bulacan,City of San Jose del Monte,1
+PH031406000,Bulacan,Bustos,1
+PH031422000,Bulacan,San Rafael,1
+PH031410000,Bulacan,City of Malolos,1
+PH031412000,Bulacan,City of Meycauayan,1
+PH031402000,Bulacan,Balagtas,1
+PH031408000,Bulacan,Guiguinto,1
+PH031415000,Bulacan,Pandi,1
+PH031421000,Bulacan,San Miguel,1
+PH031401000,Bulacan,Angat,1
+PH031417000,Bulacan,Plaridel,1
+PH031419000,Bulacan,San Ildefonso,1
+PH031407000,Bulacan,Calumpit,1
+PH031423000,Bulacan,Santa Maria,1
+PH031409000,Bulacan,Hagonoy,1
+PH031413000,Bulacan,Norzagaray,1
+PH031403000,Bulacan,Baliuag,1
+PH031405000,Bulacan,Bulacan,1
+PH031411000,Bulacan,Marilao,1
+PH031418000,Bulacan,Pulilan,1
+PH035413000,Pampanga,Mexico,1
+PH035415000,Pampanga,Porac,1
+PH035401000,Pampanga,Angeles City,1
+PH035417000,Pampanga,San Luis,1
+PH035420000,Pampanga,Santa Rita,1
+PH035419000,Pampanga,Santa Ana,1
+PH035407000,Pampanga,Guagua,1
+PH035422000,Pampanga,Sasmuan,1
+PH035409000,Pampanga,Mabalacat City,1
+PH035410000,Pampanga,Macabebe,1
+PH035403000,Pampanga,Arayat,1
+PH035405000,Pampanga,Candaba,1
+PH035412000,Pampanga,Masantol,1
+PH035421000,Pampanga,Santo Tomas,1
+PH035418000,Pampanga,San Simon,1
+PH035414000,Pampanga,Minalin,1
+PH035416000,Pampanga,City of San Fernando,1
+PH035404000,Pampanga,Bacolor,1
+PH035406000,Pampanga,Floridablanca,1
+PH035402000,Pampanga,Apalit,1
+PH035411000,Pampanga,Magalang,1
+PH035408000,Pampanga,Lubao,1
+PH030809000,Bataan,Orani,1
+PH030807000,Bataan,Mariveles,1
+PH030811000,Bataan,Pilar,1
+PH030801000,Bataan,Abucay,1
+PH030803000,Bataan,City of Balanga,1
+PH030805000,Bataan,Hermosa,1
+PH030806000,Bataan,Limay,1
+PH030812000,Bataan,Samal,1
+PH030808000,Bataan,Morong,1
+PH030810000,Bataan,Orion,1
+PH030802000,Bataan,Bagac,1
+PH030804000,Bataan,Dinalupihan,1
+PH174005000,Marinduque,Santa Cruz,1
+PH174001000,Marinduque,Boac,1
+PH174003000,Marinduque,Gasan,1
+PH174002000,Marinduque,Buenavista,1
+PH174004000,Marinduque,Mogpog,1
+PH174006000,Marinduque,Torrijos,1
+PH042112000,Cavite,Magallanes,1
+PH042114000,Cavite,Mendez,1
+PH042121000,Cavite,Ternate,1
+PH042123000,Cavite,Gen. Mariano Alvarez,1
+PH042116000,Cavite,Noveleta,1
+PH042118000,Cavite,Silang,1
+PH042106000,Cavite,City of Dasmariñas,1
+PH042108000,Cavite,City of General Trias,1
+PH042102000,Cavite,Amadeo,1
+PH042104000,Cavite,Carmona,1
+PH042111000,Cavite,Kawit,1
+PH042115000,Cavite,Naic,1
+PH042117000,Cavite,Rosario,1
+PH042120000,Cavite,Tanza,1
+PH042113000,Cavite,Maragondon,1
+PH042101000,Cavite,Alfonso,1
+PH042119000,Cavite,Tagaytay City,1
+PH042103000,Cavite,Bacoor City,1
+PH042122000,Cavite,Trece Martires City,1
+PH042109000,Cavite,Imus City,1
+PH042105000,Cavite,Cavite City,1
+PH042107000,Cavite,General Emilio Aguinaldo,1
+PH042110000,Cavite,Indang,1
+PH137504000,Metro Manila,City of Valenzuela,1
+PH133904000,Metro Manila,San Nicolas,1
+PH133906000,Metro Manila,Sampaloc,1
+PH137605000,Metro Manila,Pasay City,1
+PH137607000,Metro Manila,Taguig City,1
+PH137601000,Metro Manila,City of Las Piñas,1
+PH133913000,Metro Manila,Port Area,1
+PH137603000,Metro Manila,City of Muntinlupa,1
+PH137502000,Metro Manila,City of Malabon,1
+PH137402000,Metro Manila,City of Marikina,1
+PH133905000,Metro Manila,Santa Cruz,1
+PH133907000,Metro Manila,San Miguel,1
+PH133901000,Metro Manila,Tondo I / II,1
+PH137503000,Metro Manila,City of Navotas,1
+PH133903000,Metro Manila,Quiapo,1
+PH137404000,Metro Manila,Quezon City,1
+PH133910000,Metro Manila,Malate,1
+PH133909000,Metro Manila,Intramuros,1
+PH137602000,Metro Manila,City of Makati,1
+PH137604000,Metro Manila,City of Parañaque,1
+PH133914000,Metro Manila,Santa Ana,1
+PH137501000,Metro Manila,Caloocan City,1
+PH137606000,Metro Manila,Pateros,1
+PH133912000,Metro Manila,Pandacan,1
+PH137403000,Metro Manila,City of Pasig,1
+PH133902000,Metro Manila,Binondo,1
+PH137405000,Metro Manila,City of San Juan,1
+PH133908000,Metro Manila,Ermita,1
+PH137401000,Metro Manila,City of Mandaluyong,1
+PH133911000,Metro Manila,Paco,1
+PH045806000,Rizal,Cardona,1
+PH045808000,Rizal,Rodriguez,1
+PH045812000,Rizal,Tanay,1
+PH045814000,Rizal,Teresa,1
+PH045810000,Rizal,Pililla,1
+PH045802000,Rizal,City of Antipolo,1
+PH045804000,Rizal,Binangonan,1
+PH045811000,Rizal,San Mateo,1
+PH045807000,Rizal,Jala-Jala,1
+PH045809000,Rizal,Morong,1
+PH045813000,Rizal,Taytay,1
+PH045803000,Rizal,Baras,1
+PH045805000,Rizal,Cainta,1
+PH045801000,Rizal,Angono,1
+PH043412000,Laguna,Luisiana,1
+PH043414000,Laguna,Mabitac,1
+PH043410000,Laguna,Liliw,1
+PH043416000,Laguna,Majayjay,1
+PH043418000,Laguna,Paete,1
+PH043402000,Laguna,Bay,1
+PH043404000,Laguna,Cabuyao City,1
+PH043419000,Laguna,Pagsanjan,1
+PH043423000,Laguna,Rizal,1
+PH043425000,Laguna,City of San Pedro,1
+PH043405000,Laguna,City of Calamba,1
+PH043421000,Laguna,Pangil,1
+PH043411000,Laguna,Los Baños,1
+PH043427000,Laguna,Santa Maria,1
+PH043429000,Laguna,Siniloan,1
+PH043417000,Laguna,Nagcarlan,1
+PH043407000,Laguna,Cavinti,1
+PH043409000,Laguna,Kalayaan,1
+PH043413000,Laguna,Lumban,1
+PH043415000,Laguna,Magdalena,1
+PH043403000,Laguna,City of Biñan,1
+PH043430000,Laguna,Victoria,1
+PH043420000,Laguna,Pakil,1
+PH043401000,Laguna,Alaminos,1
+PH043426000,Laguna,Santa Cruz,1
+PH043428000,Laguna,City of Santa Rosa,1
+PH043406000,Laguna,Calauan,1
+PH043422000,Laguna,Pila,1
+PH043408000,Laguna,Famy,1
+PH043424000,Laguna,San Pablo City,1
+PH045624000,Quezon,Lucena City,1
+PH045630000,Quezon,Pagbilao,1
+PH045648000,Quezon,Tiaong,1
+PH045641000,Quezon,San Antonio,1
+PH045608000,Quezon,Candelaria,1
+PH045623000,Quezon,Lucban,1
+PH045639000,Quezon,Sampaloc,1
+PH045645000,Quezon,Sariaya,1
+PH045647000,Quezon,City of Tayabas,1
+PH045615000,Quezon,Dolores,1
+PH041007000,Batangas,Calaca,1
+PH041009000,Batangas,Cuenca,1
+PH041032000,Batangas,Taysan,1
+PH041013000,Batangas,Lian,1
+PH041034000,Batangas,Tuy,1
+PH041003000,Batangas,Balayan,1
+PH041030000,Batangas,Talisay,1
+PH041020000,Batangas,Padre Garcia,1
+PH041001000,Batangas,Agoncillo,1
+PH041028000,Batangas,Santo Tomas,1
+PH041022000,Batangas,San Jose,1
+PH041012000,Batangas,Lemery,1
+PH041014000,Batangas,Lipa City,1
+PH041010000,Batangas,Ibaan,1
+PH041031000,Batangas,City of Tanauan,1
+PH041018000,Batangas,Mataasnakahoy,1
+PH041002000,Batangas,Alitagtag,1
+PH041004000,Batangas,Balete,1
+PH041019000,Batangas,Nasugbu,1
+PH041023000,Batangas,San Juan,1
+PH041025000,Batangas,San Nicolas,1
+PH041021000,Batangas,Rosario,1
+PH041011000,Batangas,Laurel,1
+PH041027000,Batangas,Santa Teresita,1
+PH041029000,Batangas,Taal,1
+PH041017000,Batangas,Malvar,1
+PH037703000,Aurora,Dilasag,2
+PH037702000,Aurora,Casiguran,2
+PH037704000,Aurora,Dinalungan,2
+PH023136000,Isabela,Santo Tomas,2
+PH023106000,Isabela,Cabagan,2
+PH023137000,Isabela,Tumauini,2
+PH023133000,Isabela,San Pablo,2
+PH023134000,Isabela,Santa Maria,2
+PH023122000,Isabela,Quezon,2
+PH023118000,Isabela,Delfin Albano,2
+PH023119000,Isabela,Mallig,2
+PH023123000,Isabela,Quirino,2
+PH023126000,Isabela,Roxas,2
+PH023105000,Isabela,Burgos,2
+PH023114000,Isabela,Ilagan City,2
+PH023131000,Isabela,San Mariano,2
+PH023113000,Isabela,Gamu,2
+PH023120000,Isabela,Naguilian,2
+PH023104000,Isabela,Benito Soliven,2
+PH023108000,Isabela,City of Cauayan,2
+PH023125000,Isabela,Reina Mercedes,2
+PH023116000,Isabela,Luna,2
+PH023130000,Isabela,San Manuel,2
+PH023103000,Isabela,Aurora,2
+PH023107000,Isabela,Cabatuan,2
+PH023128000,Isabela,San Guillermo,2
+PH023112000,Isabela,Echague,2
+PH023115000,Isabela,Jones,2
+PH023102000,Isabela,Angadanan,2
+PH023101000,Isabela,Alicia,2
+PH023132000,Isabela,San Mateo,2
+PH023129000,Isabela,San Isidro,2
+PH023127000,Isabela,San Agustin,2
+PH025704000,Quirino,Maddela,2
+PH021529000,Cagayan,Tuguegarao City,2
+PH021512000,Cagayan,Enrile,2
+PH148104000,Apayao,Kabugao,2
+PH148102000,Apayao,Conner,2
+PH021526000,Cagayan,Santo Niño,2
+PH021521000,Cagayan,Rizal,2
+PH021520000,Cagayan,Piat,2
+PH021528000,Cagayan,Tuao,2
+PH143213000,Kalinga,City of Tabuk,2
+PH143211000,Kalinga,Rizal,2
+PH143209000,Kalinga,Pinukpuk,2
+PH143201000,Kalinga,Balbalan,2
+PH143208000,Kalinga,Pasil,2
+PH143215000,Kalinga,Tinglayan,2
+PH143206000,Kalinga,Lubuagan,2
+PH143214000,Kalinga,Tanudan,2
+PH037706000,Aurora,Dipaculao,2
+PH025706000,Quirino,Nagtipunan,2
+PH025701000,Quirino,Aglipay,2
+PH025702000,Quirino,Cabarroguis,2
+PH025703000,Quirino,Diffun,2
+PH025705000,Quirino,Saguday,2
+PH025009000,Nueva Vizcaya,Kasibu,2
+PH025011000,Nueva Vizcaya,Quezon,2
+PH025006000,Nueva Vizcaya,Diadi,2
+PH025003000,Nueva Vizcaya,Bagabag,2
+PH023135000,Isabela,City of Santiago,2
+PH023109000,Isabela,Cordon,2
+PH023124000,Isabela,Ramon,2
+PH012815000,Ilocos Norte,Pagudpud,2
+PH012801000,Ilocos Norte,Adams,2
+PH012810000,Ilocos Norte,Dumalneg,2
+PH012823000,Ilocos Norte,Vintar,2
+PH012804000,Ilocos Norte,Bangui,2
+PH012806000,Ilocos Norte,Burgos,2
+PH012817000,Ilocos Norte,Pasuquin,2
+PH012807000,Ilocos Norte,Carasi,2
+PH012814000,Ilocos Norte,Nueva Era,2
+PH012822000,Ilocos Norte,Solsona,2
+PH012818000,Ilocos Norte,Piddig,2
+PH012802000,Ilocos Norte,Bacarra,2
+PH012820000,Ilocos Norte,San Nicolas,2
+PH012821000,Ilocos Norte,Sarrat,2
+PH012812000,Ilocos Norte,Laoag City,2
+PH012809000,Ilocos Norte,Dingras,2
+PH012813000,Ilocos Norte,Marcos,2
+PH012805000,Ilocos Norte,City of Batac,2
+PH012816000,Ilocos Norte,Paoay,2
+PH012808000,Ilocos Norte,Currimao,2
+PH012819000,Ilocos Norte,Pinili,2
+PH012811000,Ilocos Norte,Banna,2
+PH012803000,Ilocos Norte,Badoc,2
+PH020906000,Batanes,Uyugan,2
+PH020903000,Batanes,Ivana,2
+PH020901000,Batanes,Basco,2
+PH020902000,Batanes,Itbayat,2
+PH020905000,Batanes,Sabtang,2
+PH020904000,Batanes,Mahatao,2
+PH012910000,Ilocos Sur,Gregorio del Pilar,2
+PH012912000,Ilocos Sur,Magsingal,2
+PH012918000,Ilocos Sur,San Esteban,2
+PH012902000,Ilocos Sur,Banayoyo,2
+PH012908000,Ilocos Sur,Cervantes,2
+PH012904000,Ilocos Sur,Burgos,2
+PH012906000,Ilocos Sur,City of Candon,2
+PH012925000,Ilocos Sur,Santa Lucia,2
+PH012927000,Ilocos Sur,Santiago,2
+PH012921000,Ilocos Sur,San Vicente,2
+PH012923000,Ilocos Sur,Santa Catalina,2
+PH012911000,Ilocos Sur,Lidlidda,2
+PH012913000,Ilocos Sur,Nagbukel,2
+PH012930000,Ilocos Sur,Sinait,2
+PH012932000,Ilocos Sur,Suyo,2
+PH012929000,Ilocos Sur,Sigay,2
+PH012919000,Ilocos Sur,San Ildefonso,2
+PH012909000,Ilocos Sur,Galimuyod,2
+PH012915000,Ilocos Sur,Quirino,2
+PH012934000,Ilocos Sur,City of Vigan,2
+PH012917000,Ilocos Sur,San Emilio,2
+PH012905000,Ilocos Sur,Cabugao,2
+PH012907000,Ilocos Sur,Caoayan,2
+PH012901000,Ilocos Sur,Alilem,2
+PH012920000,Ilocos Sur,San Juan,2
+PH012922000,Ilocos Sur,Santa,2
+PH012903000,Ilocos Sur,Bantay,2
+PH012928000,Ilocos Sur,Santo Domingo,2
+PH012931000,Ilocos Sur,Sugpon,2
+PH012933000,Ilocos Sur,Tagudin,2
+PH012924000,Ilocos Sur,Santa Cruz,2
+PH012926000,Ilocos Sur,Santa Maria,2
+PH012914000,Ilocos Sur,Narvacan,2
+PH012916000,Ilocos Sur,Salcedo,2
+PH140116000,Abra,Manabo,2
+PH140118000,Abra,Pidigan,2
+PH140122000,Abra,San Juan,2
+PH140124000,Abra,Tayum,2
+PH140112000,Abra,Langiden,2
+PH140114000,Abra,Luba,2
+PH140102000,Abra,Boliney,2
+PH140120000,Abra,Sallapadan,2
+PH140104000,Abra,Bucloc,2
+PH140110000,Abra,Lagangilang,2
+PH140126000,Abra,Tubo,2
+PH140106000,Abra,Danglas,2
+PH140127000,Abra,Villaviciosa,2
+PH140108000,Abra,La Paz,2
+PH140113000,Abra,Licuan-Baay,2
+PH140119000,Abra,Pilar,2
+PH140125000,Abra,Tineg,2
+PH140115000,Abra,Malibcong,2
+PH140117000,Abra,Peñarrubia,2
+PH140121000,Abra,San Isidro,2
+PH140105000,Abra,Daguioman,2
+PH140123000,Abra,San Quintin,2
+PH140107000,Abra,Dolores,2
+PH140111000,Abra,Lagayan,2
+PH140101000,Abra,Bangued,2
+PH140103000,Abra,Bucay,2
+PH140109000,Abra,Lacub,2
+PH144403000,Mountain Province,Besao,2
+PH144410000,Mountain Province,Tadian,2
+PH144409000,Mountain Province,Sagada,2
+PH144402000,Mountain Province,Bauko,2
+PH144408000,Mountain Province,Sadanga,2
+PH144404000,Mountain Province,Bontoc,2
+PH144406000,Mountain Province,Paracelis,2
+PH144405000,Mountain Province,Natonin,2
+PH144407000,Mountain Province,Sabangan,2
+PH144401000,Mountain Province,Barlig,2
+PH142704000,Ifugao,Lagawe,2
+PH142706000,Ifugao,Mayoyao,2
+PH142702000,Ifugao,Hungduan,2
+PH142708000,Ifugao,Aguinaldo,2
+PH142711000,Ifugao,Asipulo,2
+PH142701000,Ifugao,Banaue,2
+PH142707000,Ifugao,Alfonso Lista,2
+PH142709000,Ifugao,Hingyon,2
+PH142703000,Ifugao,Kiangan,2
+PH142705000,Ifugao,Lamut,2
+PH142710000,Ifugao,Tinoc,2
+PH025001000,Nueva Vizcaya,Ambaguio,2
+PH025014000,Nueva Vizcaya,Villaverde,2
+PH025013000,Nueva Vizcaya,Solano,2
+PH025005000,Nueva Vizcaya,Bayombong,2
+PH141103000,Benguet,Bakun,2
+PH141111000,Benguet,Mankayan,2
+PH141105000,Benguet,Buguias,2
+PH141107000,Benguet,Kabayan,2
+PH141109000,Benguet,Kibungan,2
+PH051610000,Camarines Norte,Santa Elena,1
+PH051612000,Camarines Norte,Vinzons,1
+PH051604000,Camarines Norte,San Lorenzo Ruiz,1
+PH051606000,Camarines Norte,Labo,1
+PH051602000,Camarines Norte,Capalonga,1
+PH051608000,Camarines Norte,Paracale,1
+PH051609000,Camarines Norte,San Vicente,1
+PH051611000,Camarines Norte,Talisay,1
+PH051601000,Camarines Norte,Basud,1
+PH051607000,Camarines Norte,Mercedes,1
+PH051603000,Camarines Norte,Daet,1
+PH051605000,Camarines Norte,Jose Panganiban,1
+PH051735000,Camarines Sur,Siruma,1
+PH051737000,Camarines Sur,Tinambac,1
+PH051725000,Camarines Sur,Ocampo,1
+PH051715000,Camarines Sur,Goa,1
+PH051717000,Camarines Sur,Lagonoy,1
+PH051721000,Camarines Sur,Milaor,1
+PH051723000,Camarines Sur,Nabua,1
+PH051705000,Camarines Sur,Buhi,1
+PH051711000,Camarines Sur,Caramoan,1
+PH051701000,Camarines Sur,Baao,1
+PH051707000,Camarines Sur,Cabusao,1
+PH051703000,Camarines Sur,Bato,1
+PH051709000,Camarines Sur,Camaligan,1
+PH051728000,Camarines Sur,Pili,1
+PH051734000,Camarines Sur,Sipocot,1
+PH051736000,Camarines Sur,Tigaon,1
+PH051726000,Camarines Sur,Pamplona,1
+PH051714000,Camarines Sur,Garchitorena,1
+PH051730000,Camarines Sur,Ragay,1
+PH051716000,Camarines Sur,Iriga City,1
+PH051732000,Camarines Sur,San Fernando,1
+PH051720000,Camarines Sur,Magarao,1
+PH051722000,Camarines Sur,Minalabac,1
+PH051712000,Camarines Sur,Del Gallego,1
+PH051702000,Camarines Sur,Balatan,1
+PH051718000,Camarines Sur,Libmanan,1
+PH051724000,Camarines Sur,Naga City,1
+PH051708000,Camarines Sur,Calabanga,1
+PH051704000,Camarines Sur,Bombon,1
+PH051706000,Camarines Sur,Bula,1
+PH051710000,Camarines Sur,Canaman,1
+PH051727000,Camarines Sur,Pasacao,1
+PH051731000,Camarines Sur,Sagñay,1
+PH051733000,Camarines Sur,San Jose,1
+PH051729000,Camarines Sur,Presentacion,1
+PH051713000,Camarines Sur,Gainza,1
+PH051719000,Camarines Sur,Lupi,1
+PH050516000,Albay,Santo Domingo,1
+PH050504000,Albay,Guinobatan,1
+PH050506000,Albay,Legazpi City,1
+PH050510000,Albay,Malinao,1
+PH050502000,Albay,Camalig,1
+PH050508000,Albay,City of Ligao,1
+PH050515000,Albay,Rapu-Rapu,1
+PH050517000,Albay,City of Tabaco,1
+PH050513000,Albay,Pio Duran,1
+PH050501000,Albay,Bacacay,1
+PH050503000,Albay,Daraga,1
+PH050509000,Albay,Malilipot,1
+PH050505000,Albay,Jovellar,1
+PH050507000,Albay,Libon,1
+PH050511000,Albay,Manito,1
+PH050512000,Albay,Oas,1
+PH050518000,Albay,Tiwi,1
+PH050514000,Albay,Polangui,1
+PH052002000,Catanduanes,Baras,1
+PH052011000,Catanduanes,Virac,1
+PH052008000,Catanduanes,San Andres,1
+PH052006000,Catanduanes,Pandan,1
+PH052003000,Catanduanes,Bato,1
+PH052005000,Catanduanes,Gigmoto,1
+PH052001000,Catanduanes,Bagamanoc,1
+PH052007000,Catanduanes,Panganiban,1
+PH052009000,Catanduanes,San Miguel,1
+PH052010000,Catanduanes,Viga,1
+PH052004000,Catanduanes,Caramoran,1
+PH041015000,Batangas,Lobo,1
+PH041026000,Batangas,San Pascual,1
+PH041006000,Batangas,Bauan,1
+PH041008000,Batangas,Calatagan,1
+PH041024000,Batangas,San Luis,1
+PH041016000,Batangas,Mabini,1
+PH041033000,Batangas,Tingloy,1
+PH041005000,Batangas,Batangas City,1
+PH021514000,Cagayan,Gonzaga,3
+PH023111000,Isabela,Divilacan,3
+PH023117000,Isabela,Maconacon,3
+PH021519000,Cagayan,Peñablanca,3
+PH021513000,Cagayan,Gattaran,3
+PH021516000,Cagayan,Lal-Lo,3
+PH021502000,Cagayan,Alcala,3
+PH021525000,Cagayan,Santa Teresita,3
+PH021508000,Cagayan,Buguey,3
+PH021505000,Cagayan,Aparri,3
+PH021510000,Cagayan,Camalaniugan,3
+PH021507000,Cagayan,Ballesteros,3
+PH021503000,Cagayan,Allacapan,3
+PH021501000,Cagayan,Abulug,3
+PH021511000,Cagayan,Claveria,3
+PH021518000,Cagayan,Pamplona,3
+PH021522000,Cagayan,Sanchez-Mira,3
+PH021524000,Cagayan,Santa Praxedes,3
+PH021517000,Cagayan,Lasam,3
+PH148101000,Apayao,Calanasan,3
+PH148105000,Apayao,Luna,3
+PH148107000,Apayao,Santa Marcela,3
+PH148103000,Apayao,Flora,3
+PH148106000,Apayao,Pudtol,3
+PH021506000,Cagayan,Baggao,3
+PH021504000,Cagayan,Amulung,3
+PH021515000,Cagayan,Iguig,3
+PH021527000,Cagayan,Solana,2
+PH021509001,Cagayan,Babuyan Islands,3
+PH023121000,Isabela,Palanan,3
+PH054119001,Masbate,Ticao Island,1
+PH054107001,Masbate,Burias Island,1
+PH021523000,Cagayan,Santa Ana,4

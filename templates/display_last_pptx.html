@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Display Last PowerPoint</title>
+</head>
+<body>
+    <h1>Display Last PowerPoint</h1>
+    <h1>View Last PowerPoint</h1>
+    {% if file_path %}
+    <iframe src="{{ file_path }}" width="800" height="600"></iframe>
+    {% else %}
+    <p>No PowerPoint files found in the 'output' directory.</p>
+    {% endif %}
+
+    {% if last_pptx %}
+    <a href="{% url 'download_last_pptx' %}">Download Last PowerPoint</a>
+    <br>
+   
+    {% else %}
+    <p>No PowerPoint files found in the 'output' directory.</p>
+    {% endif %}
+</body>
+</html>

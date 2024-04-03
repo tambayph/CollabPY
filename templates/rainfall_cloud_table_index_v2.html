@@ -1,0 +1,435 @@
+{% extends '_base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="bg-white dark:bg-gray-800 header-container">
+    <div style="width:70%" class="pb-2">
+        <h1 class="mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl">
+            PPT
+            <span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">Rainfall and Cloud  v2.0</span>
+        </h1>
+        <p class="text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400 pb-3">The table illustrates the real-time data on rainfall, cloud cover, and cloud types in three-hour intervals during map discussions. It utilizes color-coded indicators to convey detailed information. For additional details, refer to the table below.</p>
+        <!-- <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+            <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">   
+                <tr>
+                    <th scope="col" class="px-2 py-1">Rainfall</th>
+                    <th scope="col" class="px-2 py-1" style="background-color: yellow;">Light</th>
+                    <th scope="col" class="px-2 py-1" style="background-color: orange;">Moderate</th>
+                    <th scope="col" class="px-2 py-1" style="background-color: red;">Heavy</th>
+                    <th scope="col" class="px-2 py-1" style="background-color: fuchsia;">Torrential</th>
+                    <th scope="col" class="px-2 py-1" style="background-color: purple; color: white;">Torrential</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                    <th scope="row" class="px-2 py-1 font-medium text-gray-900 whitespace-nowrap dark:text-white">3-hourly</th>
+                    <td class="px-2 py-1">< 7.5</td>
+                    <td class="px-2 py-1">7.5 - 22.5</td>
+                    <td class="px-2 py-1">22.5 - 45</td>
+                    <td class="px-2 py-1">45 - 90</td>
+                    <td class="px-2 py-1">> 90</td>
+                </tr>
+                <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                    <th scope="row" class="px-2 py-1 font-medium text-gray-900 whitespace-nowrap dark:text-white">24-hourly</th>
+                    <td class="px-2 py-1">< 60</td>
+                    <td class="px-2 py-1">60 - 180</td>
+                    <td class="px-2 py-1">180 - 360</td>
+                    <td class="px-2 py-1">360 - 720</td>
+                    <td class="px-2 py-1">> 720</td>
+                </tr>
+            </tbody>
+        </table> -->
+        
+    </div>
+    
+    <div style="width:30%" class="date-form pl-4">
+        <fieldset>
+            <legend>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10" />
+                    <line x1="8" y1="12" x2="16" y2="12" />
+                    <line x1="12" y1="8" x2="12" y2="16" />
+                </svg>
+                Generate Poweprpoint Here!
+            </legend>
+    
+            <div class="flex items-center">
+                <label for="datepicker" class="text-gray-600 dark:text-gray-400 ml-2 font-medium inline">Please Select Date</label>
+            </div>
+    
+            <form class="space-y-6" action="{% url 'app-rainfall-cloud-create-noimage' 'datetime_string_placeholder' %}" method="post" id="myForm">
+                {% csrf_token %}
+                <div class="relative max-w-sm flex items-center">
+                    <div class="absolute inset-y-0 left-0 flex items-center pl-3.5 pointer-events-none">
+                        <svg class="w-4 h-4 text-gray-500 dark:text-gray-400 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
+                        </svg>
+                    </div>
+                
+                    <input type="date" id="datepicker" name="selectedDate" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Select date" required>
+                    <button type="submit" id="submitButton" class="text-white bg-green-400 hover-bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center ml-2">
+                        <svg class="w-4 h-4 text-white dark:text-white mr-2 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                        </svg>
+                        Submit
+                    </button>
+                    <div id="loading-spinner" style="display: none;">
+                        <button disabled type="button" class="text-white bg-blue-700 hover-bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 dark:bg-blue-600 dark:hover-bg-blue-700 dark:focus:ring-blue-800 inline-flex items-center">
+                            <svg aria-hidden="true" role="status" class="inline w-4 h-4 mr-3 text-white animate-spin" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50.5908Z" fill="#E5E7EB"/>
+                                <path d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z" fill="currentColor"/>
+                            </svg>
+                            Loading...
+                        </button>
+                    </div>
+                </div>
+            </form>      
+        </fieldset>
+        </div>
+</div>
+
+<div class="bg-white rounded-lg dark:bg-gray-800" id="stats" role="tabpanel" aria-labelledby="stats-tab">
+    <div class="files-wrapper border p-4 rounded-lg">
+        <div class="files-column">
+            <form class="search-form" action="{% url 'app-rainfall-cloud_v2' %}" method="GET">
+                <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
+                <div class="relative">
+                    <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                        <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+                        </svg>
+                    </div>
+                    <input type="search" name="q" id="default-search" value="{% if query and query|floatformat == query %}{{ query }}{% endif %}" class="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search Powerpoint...." required>
+                    <button type="submit" id="searchButton" class="text-white absolute right-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Search</button>
+                
+                </div>
+            </form>
+            {% if not_found_message %}
+            <div id="alert-border-2" class="flex items-center p-4 mb-4 text-red-800 border-t-4 border-red-300 bg-red-50 dark:text-red-400 dark:bg-gray-800 dark:border-red-800" role="alert">
+                <svg class="flex-shrink-0 w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"/>
+                </svg>
+                <div class="ml-3 text-sm font-medium">
+                <p>{{ not_found_message }}!</p>
+                Please generate the PowerPoint as the file isn't in the records.
+                </div>
+                <button type="button" class="ml-auto -mx-1.5 -my-1.5 bg-red-50 text-red-500 rounded-lg focus:ring-2 focus:ring-red-400 p-1.5 hover:bg-red-200 inline-flex items-center justify-center h-8 w-8 dark:bg-gray-800 dark:text-red-400 dark:hover:bg-gray-700"  data-dismiss-target="#alert-border-2" aria-label="Close">
+                    <span class="sr-only">Dismiss</span>
+                    <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                    </svg>
+                </button>
+            </div>
+            {% endif %}
+            <ul>
+                {% for i in files %}
+                    {% if forloop.counter <= 5 %}
+                        <li class="flex items-center justify-between border-b border-gray-200 py-2">
+                            <div class="flex items-center justify-center w-10 h-10 mr-3 rounded-lg bg-primary-100 dark:bg-primary-900">
+                                <svg class="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-white" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path clip-rule="evenodd" fill-rule="evenodd" d="M5.625 1.5c-1.036 0-1.875.84-1.875 1.875v17.25c0 1.035.84 1.875 1.875 1.875h12.75c1.035 0 1.875-.84 1.875-1.875V12.75A3.75 3.75 0 0016.5 9h-1.875a1.875 1.875 0 01-1.875-1.875V5.25A3.75 3.75 0 009 1.5H5.625zM7.5 15a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5A.75.75 0 017.5 15zm.75 2.25a.75.75 0 000 1.5H12a.75.75 0 000-1.5H8.25z"></path>
+                                    <path d="M12.971 1.816A5.23 5.23 0 0114.25 5.25v1.875c0 .207.168.375.375.375H16.5a5.23 5.23 0 013.434 1.279 9.768 9.768 0 00-6.963-6.963z"></path>
+                                </svg>
+                            </div>
+                            <span class="dark:text-gray-400">{{ i }}</span>
+                            <div class="flex items-center">
+                                <a href="{% url 'download_pptx' i %}" class="relative inline-flex items-center px-2.5 py-2 text-sm font-medium rounded-lg border bg-blue-700 text-white hover:bg-blue-800 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-white dark:border-gray-600 dark:bg-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-500 dark:focus:text-white">
+                                    <svg class="w-3 h-3 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M14.707 7.793a1 1 0 0 0-1.414 0L11 10.086V1.5a1 1 0 0 0-2 0v8.586L6.707 7.793a1 1 0 1 0-1.414 1.414l4 4a1 1 0 0 0 1.416 0l4-4a1 1 0 0 0-.002-1.414Z"/>
+                                        <path d="M18 12h-2.55l-2.975 2.975a3.5 3.5 0 0 1-4.95 0L4.55 12H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-4a2 2 0 0 0-2-2Zm-3 5a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"/>
+                                    </svg>
+                                    Download
+                                </a>
+                                <!-- <form id="deleteFileForm" method="post" action="{% url 'delete_file' %}">
+                                    {% csrf_token %}
+                                    <input type="hidden" name="file_id" id="fileIdInput" value="{{ i }}">
+                                    <button type="button" onclick="showDeleteConfirmation()" class="text-white bg-red-500 hover:bg-red-600 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm inline-flex items-center px-5 py-2.5 ml-2">
+                                        <svg class="w-4 h-4 inline mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                            <path d="M10 11V6m0 8h.01M19 10a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
+                                        </svg>
+                                        Delete
+                                    </button>
+                                </form> -->
+                            </div>
+                        </li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        </div>
+    
+        <div class="files-column">
+            <ul>
+                {% for i in files %}
+                    {% if forloop.counter > 5 %}
+                        <li class="flex items-center justify-between border-b border-gray-200 py-2">
+                            <div class="flex items-center justify-center w-10 h-10 mr-3 rounded-lg bg-primary-100 dark:bg-primary-900">
+                                <svg class="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-white" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path clip-rule="evenodd" fill-rule="evenodd" d="M5.625 1.5c-1.036 0-1.875.84-1.875 1.875v17.25c0 1.035.84 1.875 1.875 1.875h12.75c1.035 0 1.875-.84 1.875-1.875V12.75A3.75 3.75 0 0016.5 9h-1.875a1.875 1.875 0 01-1.875-1.875V5.25A3.75 3.75 0 009 1.5H5.625zM7.5 15a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5A.75.75 0 017.5 15zm.75 2.25a.75.75 0 000 1.5H12a.75.75 0 000-1.5H8.25z"></path>
+                                    <path d="M12.971 1.816A5.23 5.23 0 0114.25 5.25v1.875c0 .207.168.375.375.375H16.5a5.23 5.23 0 013.434 1.279 9.768 9.768 0 00-6.963-6.963z"></path>
+                                </svg>
+                            </div>
+                                <span class="dark:text-gray-400">  {{ i }}</span>
+                            <div class="flex items-center">
+                                <a href="{% url 'download_pptx' i %}" class="relative inline-flex items-center px-2.5 py-2 text-sm font-medium rounded-lg border bg-blue-700 text-white hover:bg-blue-800 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-white dark:border-gray-600 dark:bg-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-500 dark:focus:text-white">
+                                    <svg class="w-3 h-3 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M14.707 7.793a1 1 0 0 0-1.414 0L11 10.086V1.5a1 1 0 0 0-2 0v8.586L6.707 7.793a1 1 0 1 0-1.414 1.414l4 4a1 1 0 0 0 1.416 0l4-4a1 1 0 0 0-.002-1.414Z"/>
+                                        <path d="M18 12h-2.55l-2.975 2.975a3.5 3.5 0 0 1-4.95 0L4.55 12H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-4a2 2 0 0 0-2-2Zm-3 5a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"/>
+                                    </svg>
+                                    Download
+                                </a>
+                                <!-- <form id="deleteFileForm" method="post" action="{% url 'delete_file' %}">
+                                    {% csrf_token %}
+                                    <input type="hidden" name="file_id" id="fileIdInput" value="{{ i }}">
+                                    <button type="button" onclick="showDeleteConfirmation()" class="text-white bg-red-500 hover:bg-red-600 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm inline-flex items-center px-5 py-2.5 ml-2">
+                                        <svg class="w-4 h-4 inline mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                            <path d="M10 11V6m0 8h.01M19 10a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
+                                        </svg>
+                                        Delete
+                                    </button>
+                                </form> -->
+                            </div>
+                        </li>
+                    {% endif %}
+                {% endfor %}
+            </ul>                        
+        </div>
+
+        <div id="custom-controls-gallery" class="files-column header-image relative w-full" data-carousel="slide">
+    <!-- Carousel wrapper -->
+    <div class="relative h- overflow-hidden rounded-lg md:h-96">
+        <!-- Item 1 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="{% static 'images/luzon.png' %}" class="absolute block max-w-full h-auto w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+        </div>
+        <!-- Item 2 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+            <img src="{% static 'images/visayas.png' %}" class="absolute block max-w-full h-auto w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+        </div>
+        <!-- Item 3 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="{% static 'images/mindanao.png' %}" class="absolute block max-w-full h-auto w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+        </div>
+    </div>
+</div>
+
+    </div>
+    
+    <!-- Add pagination links -->
+    <nav class="pt-2">
+        <div class="flex justify-center">
+        <div class="pagination flex items-center space-x-2 text-sm">
+            <span class="step-links">
+            {% if files.has_previous %}
+                <a href="?page=1" class="pagination-link dark:text-gray-400">First</a>
+                <a href="?page={{ files.previous_page_number }}" class="pagination-link dark:text-gray-400">Previous</a>
+            {% endif %}
+    
+            <span class="current-page dark:text-gray-400">
+                Page {{ files.number }} of {{ files.paginator.num_pages }}.
+            </span>
+    
+            {% if files.has_next %}
+                <a href="?page={{ files.next_page_number }}" class="pagination-link dark:text-gray-400">Next</a>
+                <a href="?page={{ files.paginator.num_pages }}" class="pagination-link dark:text-gray-400">Last</a>
+            {% endif %}
+            </span>
+        </div>
+        </div>
+    </nav>
+</div>
+
+
+<div id="deleteConfirmationModal" tabindex="-1" data-modal-backdrop="static" class="fixed top-5 left-0 right-0 bottom-0 flex items-center justify-center bg-black bg-opacity-50 z-50 hidden">
+    <div class="bg-white w-30 h-25 rounded-lg shadow-lg p-4 dark:bg-gray-700" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+        <div class="flex justify-end">
+            <span class="close" data-modal-hide="popup-modal">&times;</span>
+        </div>
+        <div class="p-6 text-center">
+            <svg class="mx-auto mb-4 text-red-400 w-12 h-12 dark:text-gray-200" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 11V6m0 8h.01M19 10a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
+            </svg>
+            <h3 id="response-message-delete" class="mb-5 text-lg font-normal text-gray-500 dark:text-gray-400"></h3>
+            <p>Are you sure you want to delete this file?</p>
+            <button onclick="deleteFile()" data-modal-hide="response-modal" type="button" class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600">
+                <svg class="w-4 h-4 inline mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 11.793a1 1 0 1 1-1.414 1.414L10 11.414l-2.293 2.293a1 1 0 0 1-1.414-1.414L8.586 10 6.293 7.707a1 1 0 0 1 1.414-1.414L10 8.586l2.293-2.293a1 1 0 0 1 1.414 1.414L11.414 10l2.293 2.293Z"/>
+                </svg>
+                Yes
+            </button>   
+            <button onclick="hideDeleteConfirmation()" data-modal-hide="response-modal" type="button" class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600">
+                <svg class="w-4 h-4 inline mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 11.793a1 1 0 1 1-1.414 1.414L10 11.414l-2.293 2.293a1 1 0 0 1-1.414-1.414L8.586 10 6.293 7.707a1 1 0 0 1 1.414-1.414L10 8.586l2.293-2.293a1 1 0 0 1 1.414 1.414L11.414 10l2.293 2.293Z"/>
+                </svg>
+                No
+            </button>  
+        </div>
+    </div>
+</div>
+
+<div id="popup-modal" tabindex="-1" data-modal-backdrop="static" class="fixed top-5 left-0 right-0 bottom-0 flex items-center justify-center bg-black bg-opacity-50 z-50 hidden">
+    <div class="bg-white w-30 h-25 rounded-lg shadow-lg p-4 dark:bg-gray-700" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+        <div class="flex justify-end">
+            <span class="close" data-modal-hide="popup-modal">&times;</span>
+        </div>
+        <div class="p-6 text-center">
+            <svg class="mx-auto mb-4 text-red-400 w-12 h-12 dark:text-gray-200" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 11V6m0 8h.01M19 10a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
+            </svg>
+            <h3 id="response-message" class="mb-5 text-lg font-normal text-gray-500 dark:text-gray-400"></h3>
+            <button data-modal-hide="popup-modal" type="button" class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600">Close</button>
+        </div>
+    </div>
+</div>
+
+<div id="response-modal" data-modal-backdrop="static" class="fixed top-5 left-0 right-0 bottom-0 flex items-center justify-center bg-black bg-opacity-50 z-50 hidden">
+    <div class="bg-white w-50 h-50 rounded-lg shadow-lg p-4 dark:bg-gray-700" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+        <div class="flex justify-end">
+            <button type="button" class="absolute top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="response-modal">
+                <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                </svg>
+                <span class="sr-only">Close modal</span>
+            </button>
+        </div>
+        <div class="p-6 text-center">
+            <svg class="mx-auto mb-4 text-gray-400 w-12 h-12 dark:text-gray-200 checkmark" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5"/>
+            </svg>
+            <h3 class="mb-5 text-lg font-normal text-gray-500 dark:text-gray-400">Powerpoint Created Download Now!</h3>
+            <a href="{% url 'download_last_pptx' %}" data-modal-hide="popup-modal" type="button" class="text-white bg-red-600 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-medium rounded-lg text-sm inline-flex items-center px-5 py-2.5 text-center mr-2">
+                <svg class="w-4 h-4 inline mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M1 13a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6H1v7Zm5.293-3.707a1 1 0 0 1 1.414 0L8 9.586V8a1 1 0 0 1 2 0v1.586l.293-.293a1 1 0 0 1 1.414 1.414l-2 2a1 1 0 0 1-1.416 0l-2-2a1 1 0 0 1 .002-1.414ZM17 0H1a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1Z"/>
+                </svg>  
+                Download
+            </a>
+            <button data-modal-hide="response-modal" type="button" class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600">
+                <svg class="w-4 h-4 inline mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 11.793a1 1 0 1 1-1.414 1.414L10 11.414l-2.293 2.293a1 1 0 0 1-1.414-1.414L8.586 10 6.293 7.707a1 1 0 0 1 1.414-1.414L10 8.586l2.293-2.293a1 1 0 0 1 1.414 1.414L11.414 10l2.293 2.293Z"/>
+                </svg>
+                Cancel
+            </button>   
+        </div>
+    </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Simulate a click on the datepicker to open the calendar
+    const datePicker = document.getElementById('datepicker');
+    datePicker.click();
+});
+
+  var form = document.getElementById("myForm");
+  var dateInput = document.getElementById("datepicker");
+  var responseMessage = document.getElementById("response-message");
+  var loadingSpinner = document.getElementById("loading-spinner");
+  var submitButton = document.getElementById("submitButton");
+  const folderPath = "{{ target_path }}"; 
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    var selectedDate = dateInput.value;
+
+    // Get today's date
+    var today = new Date();
+    today.setHours(0, 0, 0, 0); // Set the time to midnight for comparison
+
+    // Parse the selected date to a JavaScript Date object
+    var parsedSelectedDate = new Date(selectedDate);
+
+    if (parsedSelectedDate > today) {
+        responseMessage.innerText = "Date is greater than today";
+        document.getElementById("popup-modal").style.display = "block";
+        return; // Exit the function and do not proceed with the form submission
+    }
+
+    var formattedDate = selectedDate.replace(/-/g, '');
+
+    form.action = form.action.replace('datetime_string_placeholder', formattedDate);
+
+
+    // Hide the submit button and show the loading spinner
+    submitButton.style.display = "none";
+    loadingSpinner.style.display = "block";
+
+    fetch(form.action, {
+        method: form.method,
+        body: new FormData(form),
+    })
+    .then(response => {
+        if (!response.ok) {
+            return response.text().then(errorText => {
+            throw new Error(`${errorText}`);
+            });
+        }
+        return response.text();
+    })
+    .then(data => {
+        // Check for a success message from the server
+        if (data.includes('successfully')) {
+            // Show the response-modal for success
+            document.getElementById("response-modal").style.display = "block";
+        } else {
+            // Display popup-modal for errors
+            document.getElementById("popup-modal").style.display = "block";
+        }
+        responseMessage.innerText = data;
+    })
+    .catch(error => {
+        console.error(error);
+        const responseMessage = document.getElementById("response-message")
+        if (error && error.message) {
+        responseMessage.innerText = `Error: ${error.message}`;
+        } else {
+            responseMessage.innerText = "An error occurred. Please contact the administrator.";
+        }
+
+        // Display popup-modal for errors
+        document.getElementById("popup-modal").style.display = "block";
+    })
+    .finally(() => {
+        // Hide the loading spinner and show the submit button again
+        loadingSpinner.style.display = "none";
+        submitButton.style.display = "inline-flex";
+    });
+});
+
+// JavaScript to close the modal
+document.addEventListener('click', function (event) {
+    if (event.target.dataset.modalHide) {
+        const modalId = event.target.dataset.modalHide;
+        const modal = document.getElementById(modalId);
+        if (modal) {
+            modal.style.opacity = 0;
+            setTimeout(function () {
+                modal.style.display = 'none';
+                modal.style.opacity = 1; // Add a page reload after closing the modal
+                window.location.reload(); // This will refresh the page
+            }, 300); // Adjust timing (in milliseconds) to match the CSS transition duration
+        }
+    }
+});
+
+function showDeleteConfirmation() {
+        var modal = document.getElementById('deleteConfirmationModal');
+        modal.style.display = 'block';
+    }
+
+    function hideDeleteConfirmation() {
+        var modal = document.getElementById('deleteConfirmationModal');
+        modal.style.display = 'none';
+    }
+
+    function deleteFile() {
+        // Get the file ID
+        var fileId = document.getElementById('fileIdInput').value;
+
+        // Set the value of the hidden input in the form
+        document.getElementById('fileIdInput').value = fileId;
+
+        // Submit the form
+        document.getElementById('deleteFileForm').submit();
+    }
+</script>
+{% endblock %}

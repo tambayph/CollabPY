@@ -1,0 +1,8 @@
+{
+  "source_ip": "10.10.7.34",
+  "share_name": "wfs/Isohyetal",
+  "local_mount_point": "<replace_with_folder_value>/mnt",
+  "username": "wfs",
+  "password": "wwff55!@#"
+}
+
